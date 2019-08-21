@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+    <style>
+        #remember {
+            margin-left: 0px;
+        }
+    </style>
+    <form method="post">
+        {% if error %}
+            <div class="alert alert-danger">
+                <div class="d-flex justify-content-center">
+                    {{ error.messageKey|trans(error.messageData,'security') }}
+                </div>
+            </div>
+        {% endif %}
+        <div class="container my-5 page-site">
+            <div class="row justify-content-center">
+                <div class="col col-md-4 ">
+                    <h1 class="h3 mb-3 font-weight-normal">Connexion</h1>
+                    <label for="inputEmail" class="sr-only">Email</label>
+                    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control"
+                           placeholder="Email" required autofocus>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" name="password" id="inputPassword" class="form-control"
+                           placeholder="Mot de passe" required>
+
+                    <input type="hidden" name="_csrf_token"
+                           value="{{ csrf_token('authenticate') }}">
+                    <br/>
+                    <div class="row" id="remember">
+                        <div class="custom-control custom-checkbox col-md-6">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" name="_remember_me">
+                            <label class="custom-control-label" for="customCheck1">Se souvenir de moi</label>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{{ path('app_forgotten_password') }}">Mot de passe oublié ?</a>
+                        </div>
+                    </div>
+                    <br/>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">
+                        Se connecter
+                    </button>
+                    <div style="text-align: center;">
+                        <div style="padding-top: 4rem;">Nouveau sur notre site ?</div>
+                        <a href="{{ path('app_register') }}">Créez votre compte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+{% endblock %}

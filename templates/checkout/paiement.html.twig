@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container my-5 page-site">
+        <h2>Récapitulatif de votre commande</h2>
+        {% for tab in panier %}
+            <div class="row">
+                <div class="col-md-4">
+                    {{ tab[1] }}x {{ tab[0].nom }}
+                </div>
+                <div class="col-md-4">
+                    {{ tab[0].prix }}€
+                </div>
+            </div>
+        {% endfor %}
+        <p><h4>Total : {{ total }}€</h4></p>
+        <div class="container mt-4">
+            <div class="d-md-flex justify-content-center">
+                <form method="post">
+                    <button type="submit">
+                        <img src="/img/paypal.jpg" alt="paypal" style="width: 100%;">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+
+{% endblock %}

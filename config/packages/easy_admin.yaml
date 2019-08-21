@@ -1,0 +1,116 @@
+easy_admin:
+    list:
+        actions: ['show']
+        batch_actions: ['delete']
+    site_name: 'Whisky Ecosse'
+    user:
+        name_property_path: 'email'
+    design:
+        menu:
+            - { label: 'Region' }
+            - Region
+            - ImageRegion
+            - { label: 'distillerie' }
+            - Distillerie
+            - ImageDist
+            - { label: 'whisky' }
+            - Whisky
+            - WhiskyImg
+            - { label: 'user' }
+            - User
+            
+        form_theme:
+            - '@EasyAdmin/form/bootstrap_4.html.twig'
+            - '@VichUploader/Form/fields.html.twig'
+        assets:
+            css:
+                - 'bundles/easyadmin/bootstrap-all.css'
+            js:
+                - 'bundles/easyadmin/bootstrap-all.js'
+    formats:
+        datetime: 'd/m/Y H:i'
+
+    entities:
+
+        Region:
+            disabled_actions: ['delete', 'new', 'edit' ]
+            class: App\Entity\Region
+            list:
+                fields:
+                    - 'nom'
+                    - 'distilleries'
+
+        Whisky:
+            class: App\Entity\Whisky
+            list:
+                fields:
+                    - 'id'
+                    - 'nom'
+                    - 'ugs'
+                    - 'dateAjout'
+                    - 'actif'
+
+
+        Distillerie:
+            class: App\Entity\Distillerie
+
+        User:
+            class: App\Entity\User
+            list:
+                fields:
+                    - 'id'
+                    - 'actif'
+                    - 'nom'
+                    - 'prenom'
+                    - 'email'
+            form:
+                fields: [{ property: 'email', type: 'email', type_options: { trim: true } },'actif', 'nom', 'prenom',
+                         'adresse', 'ville', 'codePostal', 'pays', { property: 'telephone',
+                                                                                               type: 'tel' }, 'sexe']
+        ImageRegion:
+            class: App\Entity\ImageRegion
+            list:
+                fields:
+                    - { property: 'imageFile', template: 'vich_uploader_image.html.twig' }
+                    - 'titre'
+                    - 'region'
+            form:
+                fields:
+                    - { property: 'imageFile', type: 'file' }
+                    - 'titre'
+                    - 'region'
+
+
+        ImageDist:
+            class: App\Entity\ImageDist
+            list:
+                fields:
+                    - { property: 'imageFile', template: 'vich_uploader_image.html.twig' }
+                    - 'titre'
+            form:
+                fields:
+                    - { property: 'imageFile', type: 'vich_image' }
+                    - 'titre'
+                    - 'distillerie'
+
+
+        WhiskyImg:
+            class: App\Entity\WhiskyImg
+            list:
+                fields:
+                    - { property: 'imageFile', template: 'vich_uploader_image.html.twig' }
+                    - 'titre'
+                    - 'whisky'
+            form:
+                fields:
+                    - { property: 'imageFile', type: 'vich_image' }
+                    - 'titre'
+                    - 'whisky'
+
+        Commande:
+            class: App\Entity\Commande
+
+
+
+
+

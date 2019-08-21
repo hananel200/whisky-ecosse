@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="site-section">
+        <div class="container page-site">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <span class="icon-check_circle display-3 text-success"></span>
+                    <h2 class="display-3 text-black">Merci !</h2>
+                    <p class="lead mb-5">Votre commande a bien été prise en compte.</p>
+                    <p><a href="{{ path('home') }}" class="btn btn-sm btn-primary" style="min-width: 228px;">Retour à l'accueil</a></p>
+                    <p><a href="{{ path('commande') }}" class="btn btn-sm btn-primary">Voir mes commandes</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

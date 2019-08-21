@@ -1,0 +1,144 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+    <div class="site-section">
+        <div class="container page-site">
+            {% if liste == null %}
+                <div class="col-md-6">
+                    <h2>Oups! Votre panier est vide!</h2>
+                    <a href="{{ path('whisky') }}" class="btn btn-primary btn-sm btn-block">Reprendre votre shopping !
+                    </a>
+                </div>
+            {% else %}
+                <form method="post">
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <div class="site-blocks-table">
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th class="product-thumbnail"></th>
+                                        <th class="product-name">Produit</th>
+                                        <th class="product-price">Prix</th>
+                                        <th class="product-quantity" style="min-width: 150px;">Quantité</th>
+                                        <th class="product-total">Total</th>
+                                        <th class="product-remove">Retirer</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for tab in panier %}
+                                        <tr>
+                                            <td class="product-thumbnail">
+                                                {% if tab[0].whiskyImgs[0] is defined %}
+                                                    <img src={{ vich_uploader_asset(tab[0].whiskyImgs[0],'imageFile') | imagine_filter('squared_thumbnail') }} alt="Image"
+                                                         class="img-fluid">
+                                                {% else %}
+                                                    <img src="/img/imagevide.png" alt="Image" class="img-fluid">
+                                                {% endif %}
+                                            </td>
+                                            <td class="product-name">
+                                                <h2 class="h5 text-black"><a href="{{ path('oneWhisky', {'id' : tab[0].id}) }}">{{ tab[0].nom }}</a></h2>
+                                            </td>
+                                            <td>{{ tab[0].prix }} €</td>
+                                            <td>
+                                                <div class="input-group mb-3" style="max-width: 120px;">
+                                                    <div class="input-group-prepend">
+                                                        <button class="btn btn-outline-primary js-btn-minus"
+                                                                type="button">&minus;
+                                                        </button>
+                                                    </div>
+                                                    <input name="{{ tab[0].id }}" type="text"
+                                                           class="form-control text-center"
+                                                           value={{ tab[1] }}
+                                                           placeholder="" onkeypress="return isNumber(event)"
+                                                           aria-label="Example text with button addon"
+                                                           aria-describedby="button-addon1">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-primary js-btn-plus"
+                                                                type="button">&plus;
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                            <td>{{ tab[0].prix*tab[1] }} €</td>
+                                            <td><a href="{{ path('delete', {'id': tab[0].id }) }}" class="btn btn-primary
+                                btn-sm">X</a>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row mb-5">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <button class="btn btn-primary btn-sm btn-block" type="submit">Actualiser le
+                                        panier
+                                    </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="{{ path('whisky') }}" class="btn btn-outline-primary btn-sm btn-block">Continuer
+                                        vos achats</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 pl-5">
+                            <div class="row justify-content-end">
+                                <div class="col-md-7">
+                                    <div class="row">
+                                        <div class="col-md-12 text-right border-bottom mb-5">
+                                            <h3 class="text-black h4 text-uppercase">Total du panier</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <span class="text-black">Prix HT</span>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <strong class="text-black">{{ totalHt }} €</strong>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-md-6">
+                                            <span class="text-black">Prix TTC</span>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <strong class="text-black">{{ total }} €</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a href="{{ path('checkout') }}"
+                                               class="btn btn-primary btn-lg py-3 btn-block">Passer la
+                                                commande</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+<script>
+    function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+        return true;
+    }
+</script>
+{% endblock %}

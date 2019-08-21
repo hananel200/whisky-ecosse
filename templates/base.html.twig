@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="/javascript/navabar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <title>Carte Ecosse</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% block stylesheets %}
+        <link rel="stylesheet" href="/CSS/stylesheet.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+        {#<link rel="stylesheet" href="fonts/icomoon/style.css">#}
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/magnific-popup.css">
+        <link rel="stylesheet" href="/css/jquery-ui.css">
+        <link rel="stylesheet" href="/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="/css/aos.css">
+        <link rel="stylesheet" href="/css/style.css">
+    {% endblock %}
+</head>
+<body>
+<div id="wrapper">
+    <div id="site">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark"
+             style="z-index: 10000; position: fixed; top:0; width: 100%;">
+            <a class="navbar-brand" href="{{ path('home') }}"><img src="/img/logo_site.png" alt="logo"
+                                                                   style="width: 90%;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Visite
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/region/Highlands">&nbsp; Visitez les
+                                Highlands</a>
+                            <a class="dropdown-item" href="/region/Islay">&nbsp; Visitez l'île d'Islay</a>
+                            <a class="dropdown-item" href="/region/Speyside">&nbsp; Visitez le Speyside</a>
+                            <a class="dropdown-item" href="/region/Lowlands">&nbsp; Visitez les Lowlands</a>
+                            <a class="dropdown-item" href="/region/Campbeltown">&nbsp; Visitez Campbletown</a>
+                            <a class="dropdown-item" href="/region/Islands">&nbsp; Visitez les Islands</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Boutique
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ path('whisky') }}">Tous les whiskies</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/whisky/Highlands">&nbsp; Whisky
+                                Highlands</a>
+                            <a class="dropdown-item" href="/whisky/Islay">&nbsp; Whisky Islay</a>
+                            <a class="dropdown-item" href="/whisky/Speyside">&nbsp; Whisky Speyside</a>
+                            <a class="dropdown-item" href="/whisky/Lowlands">&nbsp; Whisky Lowlands</a>
+                            <a class="dropdown-item" href="/whisky/Campbeltown">&nbsp; Whisky Campbletown</a>
+                            <a class="dropdown-item" href="/whisky/Islands">&nbsp; Whisky Islands</a>
+                        </div>
+                    </li>
+
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin">Espace administrateur</a>
+                        </li>
+                    {% endif %}
+                    <li class="nav-item dropdown">
+                        {% if not app.user %}
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Connexion
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ path('app_login') }}">Se connecter</a>
+                                <a class="dropdown-item" href="{{ path('app_register') }}">S'enregistrer</a>
+                            </div>
+                        {% else %}
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ app.user.username }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ path('app_logout') }}">Se déconnecter</a>
+                                <a class="dropdown-item" href="{{ path('user') }}">Mon compte</a>
+                            </div>
+                        {% endif %}
+                    </li>
+
+                </ul>
+                <a class="navbar-brand" href="{{ path('panier') }}"><img src="/img/panier.png" alt="panier"
+                                                                         style="width:25%;">
+                    <span id="nombre_articles" class="badge badge-secondary">
+                {% if(app.session.get('panier')) %}
+                    {{ app.session.get('panier').nbart }}
+                {% else %}
+                    0
+                {% endif %}
+            articles</span></a>
+
+            </div>
+        </nav>
+        <div class="page-sites">
+        </div>
+        {% for label, flashes in app.session.flashbag.all %}
+            {% for flash in flashes %}
+                <div class="alert alert-{{ label }}" role="alert" style="text-align: center;">
+                    {{ flash }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endfor %}
+        {% endfor %}
+
+        {% block body %}
+        {% endblock %}
+
+        {% block footer %}
+
+            <footer class="site-footer border-top" style="margin-top: 400px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="footer-heading mb-4">Navigations</h3>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Sell online</a></li>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Shopping cart</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Mobile commerce</a></li>
+                                        <li><a href="#">Dropshipping</a></li>
+                                        <li><a href="#">Website development</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Point of sale</a></li>
+                                        <li><a href="#">Hardware</a></li>
+                                        <li><a href="#">Software</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="block-5 mb-5 ml-1">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 class="footer-heading mb-4">Contact Info</h3>
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li class="address">&#10019; 203 Fake St. Mountain View, San Francisco,
+                                            California,
+                                            USA
+                                        </li>
+                                        <li class="phone">&#9742 <a href="tel://23923929210">+2 392 3929 210</a></li>
+                                        <li class="email">&#9993 emailaddress@domain.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        {% endblock %}
+
+
+        <script type="text/javascript" id="cookieinfo"
+                src="//cookieinfoscript.com/js/cookieinfo.min.js">
+        </script>
+
+        <script src="/js/jquery-ui.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>
+        <script src="/js/jquery.magnific-popup.min.js"></script>
+        <script src="/js/aos.js"></script>
+        <script src="/js/main.js"></script>
+
+        {% block javascripts %}
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>

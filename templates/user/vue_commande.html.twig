@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container page-site">
+        <div class="row mb-5 my-5">
+            <div class="col-md-12">
+                <div class="site-blocks-table">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="product-thumbnail"></th>
+                            <th class="product-name">Produit</th>
+                            <th class="product-price">Prix</th>
+                            <th class="product-quantity">Quantité</th>
+                            <th class="product-total">Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for item in commande.contenu %}
+                            <tr>
+                                <td class="product-thumbnail">
+                                    {% if item[0].whiskyImgs[0] is defined %}
+                                        <a href="{{ path('oneWhisky', {'id' : item[0].id}) }}"><img
+                                                    src={{ vich_uploader_asset(item[0].whiskyImgs[0],'imageFile') | imagine_filter('squared_thumbnail') }} alt="Image"
+                                                    class="img-fluid"></a>
+                                    {% else %}
+                                        <a href="{{ path('oneWhisky', {'id' : item[0].id}) }}"><img
+                                                    src="/img/imagevide.png" alt="Image" class="img-fluid"></a>
+                                    {% endif %}
+                                </td>
+                                <td class="product-name">
+                                    <h2 class="h5 text-black"><a
+                                                href="{{ path('oneWhisky', {'id' : item[0].id}) }}">{{ item[0].nom }}</a>
+                                    </h2>
+                                </td>
+                                <td>{{ item[0].prix }} €</td>
+                                <td>{{ item[1] }}</td>
+                                <td>{{ item[0].prix*item[1] }} €</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h4>Adresse de livraison</h4>
+                <p>{{ commande.nomAdresse }} {{ commande.adresse }} {{ commande.codePostal }} {{ commande.ville }}</p>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-12 text-right border-bottom mb-5">
+                        <h3 class="text-black h4 text-uppercase">Total de la commande {{ commande.prixTotal }} €</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

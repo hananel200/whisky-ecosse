@@ -1,0 +1,16 @@
+{% extends 'whisky/base.html.twig' %}
+
+{% block menu %}
+    <div class="col">
+        <div class="container mt-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ path('whisky') }}">Ecosse</a></li>
+                    <li class="breadcrumb-item"><a href="{{ path('whisky_regions', {'nom' : distillerie.region.nom }) }}">
+                            {{ distillerie.region.nom }}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ distillerie.nom }}</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+{% endblock %}

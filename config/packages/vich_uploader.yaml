@@ -1,0 +1,19 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        image_dist:
+            uri_prefix:         '%app.path.product_images_dist%'
+            upload_destination: '%kernel.project_dir%/public%app.path.product_images_dist%'
+            namer: 'Vich\UploaderBundle\Naming\OrignameNamer'
+
+
+        image_region:
+            uri_prefix:         '%app.path.product_images_region%'
+            upload_destination: '%kernel.project_dir%/public%app.path.product_images_region%'
+            namer: 'Vich\UploaderBundle\Naming\OrignameNamer'
+
+        image_whisky:
+            uri_prefix:         '%app.path.product_images_whisky%'
+            upload_destination: '%kernel.project_dir%/public%app.path.product_images_whisky%'
+            namer: 'Vich\UploaderBundle\Naming\OrignameNamer'

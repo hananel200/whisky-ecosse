@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+    <div class="site-section">
+        <div class="container page-site">
+            <div class="row">
+                <div class="col-md-6">
+                    {% if whisky.whiskyImgs[0] is defined %}
+                        <img class="img-fluid" style="width: 80%;" src={{ vich_uploader_asset(whisky.whiskyImgs[0], 'imageFile') | imagine_filter('squared_mythumbs') }}
+                        alt={{ whisky.whiskyImgs[0].titre }}">
+                    {% else %}
+                        <img class="img-fluid" src="/img/imagevide.png" alt="pas d'images">
+                    {% endif %}
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-black">{{ whisky.nom }}</h2>
+                    <p style="text-align: justify;">{{ whisky.description }}</p>
+                    <p class="mb-4">{{ whisky.description2 }}</p>
+                    <p><strong class="text-primary h4">{{ whisky.prix }} €</strong></p>
+                    <form method="post">
+                        <div class="mb-5">
+                            <div class="input-group mb-3" style="max-width: 120px;">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
+                                </div>
+                                <input id="qte" name="qte" type="text" class="form-control text-center" value="1"
+                                       placeholder="" onkeypress="return isNumber(event)"
+                                       aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
+                                </div>
+                            </div>
+                        </div>
+                        {% if whisky.ugs > 0 and whisky.actif %}
+                        <p><button type="submit" class="buy-now btn btn-sm btn-primary">Ajouter au panier</button></p>
+                        {% elseif whisky.ugs < 0 %}
+                        <h3 style="color: red;">Article épuisé !</h3>
+                        {% else %}
+                            <h3 style="color: red;">Cet article n'est plus disponible à la vente</h3>
+                        {% endif %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+            <h3 class="footer-heading mb-4">Détails du produit</h3>
+            <ul class="list-unstyled">
+                <li class="d-flex justify-content-between" style="border-bottom: 1px solid black;">
+                    Région : <span>
+                                <a href="{{ path('whisky_regions', {'nom': whisky.distillerie.region.nom }) }}">{{
+                                    whisky.distillerie.region
+                                    }}</a></span></li>
+                <li class="d-flex justify-content-between" style="border-bottom: 1px solid black;">
+                    Marque/distillerie : <span><a href="{{ path('whisky_dist', {'id': whisky.distillerie.id }) }}">{{
+                            whisky.distillerie
+                            }}</a></span></li>
+                {% if(whisky.volume) %}
+                    <li class="d-flex justify-content-between" style="border-bottom: 1px solid black;">
+                        Volume : <span>{{ whisky.volume }} litre</span></li>
+                {% endif %}
+                <li class="d-flex justify-content-between" style="border-bottom: 1px solid black;">
+                    Degré : <span>{{ whisky.degre }}°</span></li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}
+{% block javascripts %}
+    <script>
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+    </script>
+{% endblock %}

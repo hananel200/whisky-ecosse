@@ -1,0 +1,92 @@
+
+<div class="album py-5">
+    <div class="container">
+        <div class="row">
+            {%  if pager is not null %}
+                {% for whisky in pager.getCurrentPageResults %}
+                    {#{% if whisky.actif == true %}#}
+                        <div class="col-md-3">
+                            <div class="card mb-3">
+                                <div class="card-body" style="min-height: 410px;">
+                                    {% if whisky.whiskyImgs[0] is defined %}
+                                        <a href="{{ path('oneWhisky', {'id': whisky.id}) }}">
+                                            <img src={{ vich_uploader_asset(whisky.whiskyImgs[0], 'imageFile') | imagine_filter('squared_thumbnail') }}
+                                                 alt={{ whisky.whiskyImgs[0].titre }}
+                                                 style="width: 80%;">
+                                        </a>
+                                    {% else %}
+                                        <a href="{{ path('oneWhisky', {'id': whisky.id}) }}">
+                                            <img src="/img/imagevide.png"
+                                                 alt="pas d'images" style="width: 80%;">
+                                        </a>
+                                    {% endif %}
+                                    <h5 class="card-title">
+                                        <a href="{{ path('oneWhisky', {'id': whisky.id}) }}"><br/>
+                                            {% if whisky.nom|length <23 %}
+                                                {{ whisky.nom }}<br/><br/>
+                                            {% else %}
+                                                {{ whisky.nom }}<br/>
+                                            {% endif %}
+                                        </a>
+                                    </h5>
+                                    <p class="card-text">{{ whisky.degre }} degré</p>
+
+                                    <div class="text-primary" style="font-size: 2rem; font-weight: bold;">
+                                        {{ whisky.prix }} €
+                                        {% if whisky.ugs > 0 %}
+                                            <a href="{{ whisky.id }}" class="add_panier">
+                                                <img src="/img/panier_1.png" alt="panier" style="width: 25%;float: right;">
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                    {% if whisky.ugs == 0 %}
+                                        <span style="color:red; font-weight: bold;">En rupture !</span>
+                                    {% else %}
+                                        <span><br/></span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {#{% endif %}#}
+                {% endfor %}
+            {% else %}
+                <p>Aucun résultat trouvé</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="mx-auto">
+        <div class="pagerfanta">
+            {%  if pager is not null %}
+                {{ pagerfanta(pager, 'twitter_bootstrap4') }}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% if distillerie is defined %}
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <p style="text-align: justify;">
+                    {{ distillerie.description1 }}
+                </p>
+                <p style="text-align: justify;">
+                    {{ distillerie.description2 }}
+                </p>
+                <p style="text-align: justify;">
+                    {{ distillerie.description3 }}
+                </p>
+            </div>
+            <div class="col-12 col-lg-6">
+                {% if distillerie.imageDists[0] is defined %}
+                    <img src="{{ vich_uploader_asset(distillerie.imageDists[0], 'imageFile') }}" alt="img_dist" class="img-fluid">
+                {% else %}
+                    <img src="/img/default_dist.jpg" alt="imageParDefault" class="img-fluid">
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endif %}

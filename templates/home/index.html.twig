@@ -1,0 +1,203 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+{% endblock %}
+
+{% block body %}
+    <div class="container my-5 page-site">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h1>Ecosse : terre promise</h1>
+                <small class="my-2">paradis du whisky</small>
+                <p style="text-align: justify;">Le whisky est la boisson nationale de l'Écosse et le produit le plus
+                    exporté :
+                    il est consommé dans le monde entier et ici, en Écosse. Des distillateurs de talent utilisent l'eau
+                    de source cristalline
+                    et l'orge doré et charnu pour les transformer en un liquide précieux. Ce dernier est ensuite versé
+                    dans des fûts de chêne
+                    et entreposé pour son vieillissement. L'alcool ne peut être considéré scotch qu'après avoir vieilli
+                    au moins trois ans en Écosse. </p>
+                <p style="text-align: justify;">L'Écosse possède plus d'une centaine de distilleries en activité,
+                    réparties sur les six régions de whisky.
+                    Chaque whisky présente des saveurs et un caractère uniques,
+                    et quels que soient vos goûts, vous en trouverez sûrement un qui vous plaira.
+                    Il suffit juste d'en savourer quelques-uns pour trouver le vôtre !</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img src="/img/scantland-header.jpg" alt="ecosse" style="width: 100%">
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="d-flex justify-content-center">
+            <h2>Carte des régions et des distilleries d'Ecosse</h2>
+        </div>
+        <div id="carte" class="d-flex justify-content-center">
+                <div id="mapid"></div>
+        </div>
+    </div>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <p style="text-align: justify;">La première trace de whisky en Écosse remonte à 1494. Il s'agit d'une note se référant à la production d’eau-de-vie dans un document
+                officiel l'Exchequer's roll qui précise « 8 bolls of malt to Friar John Cor, by order of the King to make aqua vitae » témoignage
+                d'une pratique déjà bien installée. On considère généralement que les moines de Dal Riada firent profiter les Écossais de leurs
+                connaissances dans le domaine de la distillation lorsqu'ils vinrent évangéliser les Pictes de Calédonie.</p>
+            <p style="text-align: justify;">Au xvie siècle, la mise au point de systèmes de refroidissement à eau2 permettent une nette amélioration qualitative qui
+                accélère le développement économique du whisky écossais. La dissolution des monastères anglais puis écossais amène les moines
+                à se fondre à la population et à communiquer leur savoir-faire. Si la revente d'eau-de-vie en Écosse n'est licite que pour
+                les barbiers et chirurgiens depuis 1505,
+                elle est parallèlement devenue une activité courante à la ferme où le surplus de grain est distillé.</p>
+            <p style="text-align: justify;">
+                Dès le début du xviie siècle, le parlement écossais tente de contrôler la consommation d'alcool qui pose problème dans les Hébrides en interdisant l'importation de liqueurs du continent. Les lois passées en 16093, 1616 puis 1622 ont pour effet d'encourager la production locale. En 1644, une mauvaise récolte met en évidence un risque de pénurie en orge liés à l'expansion de la production du whisky. Une taxe est instaurée sur l'eau-de-vie, et l'activité de distillation légalement limitée. La fin du siècle marque les débuts de l'industrialisation de la production avec l'accroissement de la taille des alambics d'une taille artisanale (de 100 à 250 l) à une production de masse.
+            </p>
+            <p style="text-align: justify;">
+                Parallèlement, de grandes distilleries légales s'installent dans les Lowlands, produisant des alcools de mauvaise qualité à partir de céréales non maltées. La production est en très nette augmentation et la distillation structure l'activité économique de la région, exploitant le charbon des mines proches, nourrissant le bétail à partir du moult de production et inondant le marché britannique.
+            </p>
+            <p style="text-align: justify;">
+                En 1784, le Wash Act cherche à simplifier le système de taxation afin de le rendre plus efficace. Les contrôles sur les distilleries officielles sont renforcés, la production est encouragée dans les Highlands par des taxes allégées sous réserve que la production ne soit pas exportée. De plus, une taille minimum des alambics est imposée. À l'approche de la révolution industrielle, la production clandestine s'intensifie encore dans les Highlands tandis que la qualité de ces whiskies est réputée supérieure à celle des Lowlands.
+            </p>
+            <p style="text-align: justify;">
+                En 1784, le Wash Act cherche à simplifier le système de taxation afin de le rendre plus efficace. Les contrôles sur les distilleries officielles sont renforcés, la production est encouragée dans les Highlands par des taxes allégées sous réserve que la production ne soit pas exportée. De plus, une taille minimum des alambics est imposée. À l'approche de la révolution industrielle, la production clandestine s'intensifie encore dans les Highlands tandis que la qualité de ces whiskies est réputée supérieure à celle des Lowlands.
+            </p>
+        </div>
+        <div class="col-12 col-lg-6">
+            <p><img src="/img/acc1.jpg" alt="image_accueil" style="width: 100%;"></p>
+            <p><img src="/img/acc2.jpg" alt="image_accueil" style="width: 100%;"></p>
+            <p><img src="/img/acc3.jpg" alt="image_accueil" style="width: 100%;"></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block javascripts %}
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
+    <script src="https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js"
+            integrity="sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g=="
+            crossorigin=""></script>
+    <script src="/javascript/monfichier.js"></script>
+
+    <script>
+        // récupère les données du controller préalablement converti en json. Sert à afficher les markers et popup pour les distilleries.
+        var json = {{ dist |raw }};
+        $.each(json, function (i, dist) {
+            //icône du marker
+            var icon = L.icon({
+                iconUrl: '/img/1318553.png',
+                iconSize: [40, 40],
+            });
+
+            var customOptions =
+                {
+                    'maxWidth': '200',
+                    'className': 'custom'
+                };
+
+            if (dist.img == "") {
+                var customPopup = "<h3>" + dist.nom + "</h3><img src= '/img/icone_dist.jpg' alt='maptime logo gif' " +
+                    "width='350px'/><br/>" + dist.desc + "<a style='color: black;' href='/whisky/dist/" + dist
+                        .id + "'>S'y rendre " +
+                    "</a>";
+            } else {
+                var customPopup = "<h3>" + dist.nom + "</h3><img src='images/dist/" + dist.img + "' alt='maptime " +
+                    "logo gif' " +
+                    "width='350px'/><br/>" + dist.desc + "<a style='color:black;' href='/whisky/dist/" + dist
+                        .id + "'>S'y rendre</a>";
+                ;
+            }
+
+
+            var marker = L.marker([dist.latitude, dist.longitude], {icon: icon}).addTo(map);
+            marker.bindPopup(customPopup, customOptions);
+        });
+
+        //Pour mettre du texte sur la carte, finalement j'ai chosi d'afficher une image
+        // var myIcon = L.divIcon({className: 'my-div-icon', html: '<a href="highlands"><h3>Highlands</h3></a>'});
+        // // you can set .my-div-icon styles in CSS
+        // L.marker([56.8, -5], {icon: myIcon}).addTo(map);
+
+        //dessinne les bordures de la grande bretagne à partir du fichier uk.json
+        // $.getJSON("/json/uk.json", function(json) {
+        //     L.geoJSON(json, {
+        //             style: function (feature) {
+        //                 return {color: "black", weight:1, opacity:0.5};
+        //             }
+        //         }).addTo(map);
+        // });
+
+        //Pour superposer l'image sur la carte (celle des couleurs pour les régions)
+        var imageUrl = '/img/image1.png',
+            imageBounds = [[54.6, -8.2], [59.41, -1.8]];
+        L.imageOverlay(imageUrl, imageBounds, {opacity: 0.6}).addTo(map);
+
+
+        //images pour les régions + liens vers leurs pages
+
+        Highlandsimg = '/img/highlands.png';
+        highlandsOverlay = new L.imageOverlay(Highlandsimg, [[55.7, -5.3], [57.4, -3]], {
+            opacity: 0.7,
+            interactive: true
+        });
+        map.addLayer(highlandsOverlay);
+        highlandsOverlay.on('click', function (e) {
+            window.open('/region/highlands');
+        });
+
+        Lowlandsimg = '/img/lowlands.png';
+        lowlandsOverlay = new L.imageOverlay(Lowlandsimg, [[54.7, -4.8], [56.4, -2.5]], {
+            opacity: 1,
+            interactive: true
+        });
+        map.addLayer(lowlandsOverlay);
+        lowlandsOverlay.on('click', function (e) {
+            window.open('/region/lowlands');
+        });
+
+        speysideimg = '/img/speyside.png';
+        speysideOverlay = new L.imageOverlay(speysideimg, [[56.6, -4], [58.25, -1.7]], {
+            opacity: 1,
+            interactive: true
+        });
+        map.addLayer(speysideOverlay);
+        speysideOverlay.on('click', function (e) {
+            window.open('/region/speyside');
+        });
+
+        islayimg = '/img/islay.png';
+        islayOverlay = new L.imageOverlay(islayimg, [[55.65, -7.9], [55.93, -6.3]], {
+            opacity: 1,
+            interactive: true
+        });
+        map.addLayer(islayOverlay);
+        islayOverlay.on('click', function (e) {
+            window.open('/region/islay');
+        });
+
+        campbeltownimg = '/img/campbletown.png';
+        campbeltownOverlay = new L.imageOverlay(campbeltownimg, [[55.3, -7.35], [55.58, -5.75]], {
+            opacity: 1,
+            interactive: true
+        });
+        map.addLayer(campbeltownOverlay);
+        campbeltownOverlay.on('click', function (e) {
+            window.open('/region/campbeltown');
+        });
+
+
+        islandsimg = '/img/islands.png';
+        islandsOverlay = new L.imageOverlay(islandsimg, [[56.9, -8], [58.1, -5.2]], {
+            opacity: 1,
+            interactive: true
+        });
+        map.addLayer(islandsOverlay);
+        islandsOverlay.on('click', function (e) {
+            window.open('/region/islands');
+        });
+
+    </script>
+{% endblock %}

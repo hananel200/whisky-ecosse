@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="container mt-4 page-site">
+        <h2>Cher {{ app.user.prenom | capitalize }}  {{ app.user.nom |capitalize }}</h2>
+        <a href="{{ path('paiement') }}">Voulez-vous être livré à cette adresse?</a>
+        <p>{{ app.user.nom | capitalize }} {{ app.user.prenom | capitalize }}<br/>{{ app.user.adresse }}<br/>{{ app.user
+            .codePostal }}<br/>{{ app.user.ville | capitalize }}</p>
+        <a href="#" id="other_adresse">Choisir une autre adresse</a>
+
+        <div class="col-md-5 mt-4" id="new_adress" style="display: none;">
+            <form method="post">
+                <input type="text" placeholder="Nom et prénom" name="nom" class="form-control">
+                <input type="text" placeholder="Numéro et nom de la rue" name="adresse" class="form-control">
+                <input type="text" placeholder="Ville" name="ville" class="form-control">
+                <input type="text" placeholder="Code Postal" name="CP" class="form-control">
+                <button class="btn btn-primary btn-lg btn-block" type="submit" style="margin-top: 1em;">
+                    Envoyer à cette adresse
+                </button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

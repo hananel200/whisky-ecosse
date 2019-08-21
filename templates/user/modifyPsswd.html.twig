@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container mt-5 col-md-5 page-site">
+        {{ form_start(form) }}
+        {{ form_row(form.password, {'label':'Mot de passe', 'attr': {'placeholder':'Six caractères min avec une lettre et un chiffre'}}) }}
+        {{ form_row(form.confirm_password, {'label':'Confirmation', 'attr': {'placeholder':'Veuillez confirmer votre mot de passe' }}) }}
+        {{ form_end(form) }}
+    </div>
+
+{% endblock %}

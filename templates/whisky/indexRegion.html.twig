@@ -1,0 +1,28 @@
+{% extends 'whisky/base.html.twig' %}
+
+{% block menu %}
+    <div class="col">
+        <div class="container mb-4 mt-4">
+            <h3>{{ region.nom }} : Tous les whiskies</h3>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #66afe9;
+        border-radius:15px; padding: 0;">
+                <div id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 1.2rem">
+                                Distilleries
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                {% for distillerie in distilleries %}
+                                    <a class="dropdown-item" href="{{ path('whisky_dist', {'id' : distillerie.id}) }}">{{
+                                        distillerie.nom }}</a>
+                                {% endfor %}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+{% endblock %}

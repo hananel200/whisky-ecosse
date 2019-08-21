@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container my-5 page-site">
+        <h2>vos informations</h2>
+        <p>
+        <div>{{ app.user.prenom | capitalize }} </div>
+        <div>{{ app.user.nom | capitalize }}</div>
+        <div>{{ app.user.email }}</div>
+        <div>{{ app.user.pays |capitalize }}</div>
+        <div>{{ app.user.codePostal |capitalize }}</div>
+        <div>{{ app.user.ville |capitalize }}</div>
+        <div>{{ app.user.adresse }}</div>
+        <div>{{ app.user.telephone }}</div>
+        </p>
+        <p><a href="{{ path('commande') }}">Mes commandes</a></p>
+        <p><a href="{{ path('modify_account') }}">Modifier votre compte</a></p>
+        <p><a href="{{ path('modify_psswd') }}">Modifier votre mot de passe</a></p>
+        <a href="#" data-toggle="modal" data-target="#exampleModal">
+            Cloturer mon compte
+        </a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Attention!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Vous êtes sur le point de vous désinscrire, cette action est irréversible.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                        <a href="{{ path('delete_account') }}" class="btn btn-primary">Se désinscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

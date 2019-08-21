@@ -1,453 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9546255f-2a7c-486e-b634-255a549c7550" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/18238ec7-4ebe-452e-bb10-fb2396bb8972.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Stagiaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/projet.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.phar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/cache.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/debug.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/easy_log_handler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/twig_extensions.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/validator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/dev/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/easy_admin.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/liip_imagine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logo_dist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/aos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/bootstrap/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/bootstrap/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/slicebox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/style_elen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/Read Me.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/demo-files/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/demo-files/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/fonts/icomoon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/fonts/icomoon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/fonts/icomoon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/fonts/icomoon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/selection.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/icomoon/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5c6fc77c95420_dauphin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5c6fcaa9b358e_permis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5c6fcade735fc_mvc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5c6fcb7e437ef_dauphin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5c6fcc7368bd1_dauphin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5c6fcefb3b89a_permis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5c750470a790e_dauphin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5c7fc59a718db_highlands.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5c7fc5a3e5327_islay.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5c8a063f043e1_dauphin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5c8a0761b6ae3_mvc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab3e44efa7_0C08E9ACAED0F38D20BAAE05E9C1799E1A88C90C.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab3ece894c_1._Talisker_Distillery_-_External_982976422.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab3f513a0e_4._Oban_Distillery_-_Tasting_1693772927.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab3fdbf046_8_year_old_Glencoe_272814649.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab4058c0fe_1970FFC6171844D52190708BE11471407ED117EE.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab40d8b8af_22154495_10155721338921197_477990487303125933_n_1657987747.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab42860a43_23377244_10155907407172053_1755908411_o_1969099270.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab4303acd6_29692938_10156340799897053_759620698_o_205838922.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab43c0189c_29693734_10156340800312053_1294971298_o_1028235260.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab444958cb_Ard8_658338122.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab450b0281_balblair_1673791218.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab45c8e392_balblair_1673791218.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab46ac990b_window_view_2_1362542110.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab476c547c_warehouseman_1004280608.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab48385ac8_Victoria_R_1_small_590169278.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab49f346ef_Talisker_DSC8254_psd_1611767658.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab4b0c2020_Talisker_0682_psd_2069648221.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab4c3ea26b_Talisker_0336_psd_833405124.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab4cf8ef77_Talisker_0048_1344303864.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab4e1df473_Stills_from_washbacks_1_737646575.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab4ee38b5e_stills_896537858.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab4fb56604_stillroom_from_above_1104600405.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab507c5b85_still_room_ground_level_1396376167.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab529aa1e1_spring_time_Ben_Nevis_Distillery_1509401815.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab537aa596_source_of_Ben_Nevis_whisky_364339189.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab546d3e25_sampling_the_barrel_1621723517.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab55479b54_sampling_the_barrel_1621723517.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab567267b6_Raasay_Distillery_294_of_513__1274954928.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab57f4cef2_Raasay_Distillery_259_of_513__431760965.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab58c2b9c9_Raasay_Distillery_259_of_513__431760965.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab596c8598_Glen_Ord_0004_1281410969.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/5cdab5a433bf5_Diageo_Clynelish_Brora_1113807498.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dist/fig5_14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5c6fc0341b3ee_permis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5c6fc7629576d_dauphin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cd01e7dd95e3_whisky-regions-highlands-header_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cd01fd3deecf_campbletown-header.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cd0204f882a1_Islay-header.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cd02199ebd91_Lowlands.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cd0222846145_Speyside-header.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cd023550c328_Islands-header.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee79dfd2eba_6ffa00db-e8ca-3bc1-8682-d6ea844d3aa2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee79e8509e5_313.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee79f21d1eb_loch-affric.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee79fc2737f_maxresdefault.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee7a0507247_quiraing-trotternish-landscape-isle-skye-scotland-uk-SCOT1218.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee7e1da87d7_6ffa00db-e8ca-3bc1-8682-d6ea844d3aa2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee7e263f66f_Islay_Lagavulin_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee7e2d37f95_maxresdefault (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee7e321314c_Portnahaven-Islay-lighthouse-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee7e3633f11_T2A5126-679x400.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee7ea0bfe08_8_6_4l.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee7eb0546d6_314.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee7eb7c6c7f_Ballindalloch-Castle-Moray-Speyside-©-Claire-Russell-1200x800.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee7ebe859de_large.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee7ec52bf71_strathisla-distillery-ext.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee81368d281_05a9707f3a14665b2d1ea5762b9d4343.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee8140743e7_3358.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee81529681b_Bladnoch-distillery.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee815a33f37_lowlands.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee816016e6a_maxresdefault.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee81947a85d_12994126.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee819baeeba_Campbeltown-Aerial-Raymond-Hosie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee81a4b0726_campbeltown-beach.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee81ab4688f_ctn-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee81b11fbbf_ctn-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee81e254644_23030-scotland-isle-of-skye-lghoz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee81f85e410_Eilean-Donan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee81fee430b_http___com.ft.imagepublish.prod.s3.amazonaws.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee8207d2523_old-man-of-hoy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/5cee820d74eae_scottish-islands-yesnaby-cliffs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/region/rhino.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5c8a6bdcc0117_71KOTolaybL._SY445_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5c8a6bf087c55_81eEcsuZiPL._SY445_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5c8a6bfd5c0e6_170px-2017_Ballantine's_Finest.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5c8a6c0b9a0d9_1818-or-whisky-70-cl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5c8a6c15ef016_100330_Monkey-Shoulder-Blended-Malt-Whisky-07L-40-Vol_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5c8a6c20c0e0e_100330_Monkey-Shoulder-Blended-Malt-Whisky-07L-40-Vol_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5c8a6c2b1ef5d_5000299298374_PHOTOSITE_20171003_162204_0 (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5c8a6c368d2af_wb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5cb598e8df42a_portcharlotte.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce65ac457399_0C08E9ACAED0F38D20BAAE05E9C1799E1A88C90C.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce65ad7997cf_téléchargement.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce664d83463f_aberfeldy-12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce664e30fcc2_aberfeldy-21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce664e870032_aberfeldy-1999-2016-gordon-macphail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce664f115a89_aberlour-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce664fa84f72_aberlour-10-1l.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce66502982e5_aberlour-12-unchillfiltered.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce6650bc9a44_téléchargement.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce665158d496_anCnoc-12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce6651eb9c96_ancnoc-18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce66525a7896_aberlour-12-double-cask-40.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce6652eb6eb8_famous-grouse-naked-grouse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce6653c14b48_ancnoc-rascan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce6654533cfd_m8314.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce6655230729_speyburn-bradan-orach-2018.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce6655bd12ca_old-pulteney-stroma-liqueur.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce66565c9fce_ancnoc-vintage-2001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce6656f407a0_campbeltown-loch-blend.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce66588bb4e3_téléchargement.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce66595de861_campbeltown-loch-blend.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce66b9b65628_aberlour-12-double-cask-40.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce686154ecd0_smokin-blended-dt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce688c8acbae_aberfeldy-12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce68bb672dbd_campbeltown-loch-blend.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/whisky/5ce68e33d34a2_aberlour-12-double-cask-40.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/1318553.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Image1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Rouge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/aa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/abcdefgh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/acc1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/acc2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/acc3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/author.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/background-website.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/bleu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/campbletown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/default_dist.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/highlands.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/highlands.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/highlandsImg1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/icodist.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/icodist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/icodist1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/icodisti.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/icodisti.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/icone.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/icone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/icone_dist.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/icône.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/images.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/imagevide.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/islands.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/islay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/jaune.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo_dist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo_dist_new.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo_site.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo_site.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/lowlands.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/panier.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/panier123.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/panier_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/paypal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portcharlotte.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/product-img/product-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/product-img/product-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/product-img/product-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/product-img/product-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/product-img/product-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/product-img/product-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/product-img/product-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/product-img/product-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/product-img/product-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/product-img/product-big-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/product-img/product-big-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/product-img/product-big-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/scantland-header.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/scotland header" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/scottish-whisky-regions.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/speyside.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/whisky-region-maps.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/whisky-regions-highlands-header.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/whisky-regions-highlands-header_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascript/jquery.slicebox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascript/js/active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascript/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascript/js/classy-nav.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascript/js/jquery/jquery-2.2.4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascript/js/map-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascript/js/plugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascript/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascript/modernizr.custom.46884.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascript/monfichier.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascript/navabar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/aos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_site-base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_site-blocks.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_site-navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_code.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/bootstrap-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/bootstrap-reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_background-variant.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_caret.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_grid-framework.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_hover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_nav-divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_reset-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_resize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_table-row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_text-emphasis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_text-hide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_text-truncate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_embed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_screenreaders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_shadows.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CheckoutController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/PanierController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/RegionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/WhiskyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/WhiskyFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Commande.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Distillerie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/ImageDist.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/ImageRegion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Panier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Region.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Whisky.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/WhiskyImg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/DistillerieType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ImageDistType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190226093703.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20190226094635.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CommandeRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/DistillerieRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/DistillerieTypeRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ImageDistRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ImageRegionRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/OrderRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/RegionRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/WhiskyImgRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/WhiskyRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/EasyAdminBundle/default/layout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/SwiftMailer/confirm_order.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/error.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/checkout/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/checkout/paiement.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/checkout/thankyou.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/newdist.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/newdistImg.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/panier/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/region/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/forgotten_password.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/reset_password.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/commandes.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/modify.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/modifyPsswd.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/success.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/vue_commande.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/vich_uploader_image.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/whisky/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/whisky/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/whisky/indexDist.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/whisky/indexRegion.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/whisky/oneWhisky.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/whisky/search.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/whisky/whiskyList.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="9546255f-2a7c-486e-b634-255a549c7550" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -540,9 +94,7 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.git/COMMIT_EDITMSG">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-130" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -1095,12 +647,12 @@
       <workItem from="1560754836964" duration="8370000" />
       <workItem from="1561361342334" duration="624000" />
       <workItem from="1562103581069" duration="4501000" />
-      <workItem from="1566388117885" duration="2818000" />
+      <workItem from="1566388117885" duration="3071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="757027000" />
+    <option name="totallyTimeSpent" value="757280000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1112,9 +664,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-7" y="0" width="814" height="867" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49888888" visible="true" weight="0.09383033" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49888888" visible="true" weight="0.19363396" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5011111" side_tool="true" weight="0.20735608" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1127,7 +679,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49871466" visible="true" weight="0.49305555" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49871466" visible="true" weight="0.49929675" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5012854" side_tool="true" weight="0.32777777" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32666665" />
       <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32916668" />
@@ -1562,9 +1114,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.git/COMMIT_EDITMSG">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
